@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials - SolidBuild Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  url('testimonial.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background: #FBBF24;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1F2937;
+    }
+
+    nav a:hover {
+      color: #1E3A8A;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1E3A8A;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-card h4 {
+      margin: 0.5rem 0 0.2rem;
+      color: #111827;
+    }
+
+    .testimonial-card .stars {
+      color: #fbbf24;
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonial-card p {
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    footer {
+      background: #1E3A8A;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>What Our Clients Say</h1>
+    <p>Real experiences from our happy clients</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="client1.jpg" alt="Client 1">
+        <h4>Priya R.</h4>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p>"SolidBuild delivered our dream home with top quality and zero hassle. We felt heard and cared for every step of the way!"</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="client2.jpg" alt="Client 2">
+        <h4>Manoj D.</h4>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Excellent project execution! Their team is highly professional, timely, and transparent. Highly recommended for commercial builds."</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="client3.jpg" alt="Client 3">
+        <h4>Sneha M.</h4>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+        <p>"Very good team coordination and execution. The eco-friendly features they built into our office make a big difference."</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="client4.jpg" alt="Client 4">
+        <h4>Arun V.</h4>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"From concept to completion, the SolidBuild team was dedicated, innovative, and precise. Very happy with our factory construction!"</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

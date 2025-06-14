@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - SolidBuild Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background: url('background.png') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
+    }
+
+    nav {
+      background: #FBBF24;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1F2937;
+    }
+
+    nav a:hover {
+      color: #1E3A8A;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h2, h3 {
+      color: #1E3A8A;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card .info {
+      padding: 1rem;
+    }
+
+    .project-card .info h4 {
+      margin: 0.5rem 0;
+      color: #111827;
+    }
+
+    .project-card .info p {
+      font-size: 0.95rem;
+      color: #4B5563;
+    }
+
+    footer {
+      background: #1E3A8A;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Projects</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Explore Our Work</h2>
+    <p class="intro">We take pride in delivering top-tier construction projects that reflect innovation, quality, and reliability. Below are some of our signature works across residential, commercial, and public sectors.</p>
+
+    <!-- Residential Projects -->
+    <h3>Residential Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="villa.jpg" alt="Luxury Villa">
+        <div class="info">
+          <h4>Sunset Villa, Coimbatore</h4>
+          <p>Premium 3BHK villa with modern architecture and landscape garden.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="apartment.jpg" alt="Urban Apartments">
+        <div class="info">
+          <h4>Green Heights Apartments</h4>
+          <p>Eco-friendly apartment complex with rainwater harvesting and solar panels.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Commercial Projects -->
+    <h3>Commercial Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="mall.jpg" alt="Shopping Mall">
+        <div class="info">
+          <h4>Skyline Mall, Chennai</h4>
+          <p>Modern retail space with multiplex and food court, built in 2023.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="office.jpg" alt="Tech Park">
+        <div class="info">
+          <h4>Tech Valley Park</h4>
+          <p>State-of-the-art office complex for IT firms with smart energy systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infrastructure Projects -->
+    <h3>Infrastructure Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="bridge.jpg" alt="Bridge Construction">
+        <div class="info">
+          <h4>Riverlink Suspension Bridge</h4>
+          <p>A major transport upgrade connecting rural areas, completed in record time.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="school.jpg" alt="School Project">
+        <div class="info">
+          <h4>SmartGov School Campus</h4>
+          <p>A smart educational building with green standards and e-classroom setups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

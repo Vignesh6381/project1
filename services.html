@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - SolidBuild Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #1f2937;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.8)), url('services-header.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      background: url('SOLID BUILD CONSTRUCTION.png') no-repeat center center/cover;
+      
+    }
+
+    nav {
+      background: #FBBF24;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1F2937;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1E3A8A;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1E3A8A;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card i {
+      font-size: 2.5rem;
+      color: #FBBF24;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      color: #1E3A8A;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    footer {
+      background: #1E3A8A;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-tools"></i> Our Services</h1>
+    <p>Comprehensive Construction Solutions Tailored to Your Needs</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="fade-in">
+    <h2>What We Offer</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-home"></i>
+        <h3>Residential Construction</h3>
+        <p>From blueprints to brickwork, we build homes that last a lifetime.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-building"></i>
+        <h3>Commercial Buildings</h3>
+        <p>Office spaces, shopping centers, and more with professional polish.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-recycle"></i>
+        <h3>Green Architecture</h3>
+        <p>Sustainable and eco-friendly solutions for modern infrastructure.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-hammer"></i>
+        <h3>Renovations & Remodeling</h3>
+        <p>Upgrade or refresh your spaces with minimal disruption.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>Design & Planning</h3>
+        <p>Expert planning and architectural consultation from day one.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-hard-hat"></i>
+        <h3>Project Management</h3>
+        <p>We handle the timeline, team, and tools — delivering on time, every time.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+

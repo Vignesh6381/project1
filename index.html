@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SolidBuild Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --primary-color: #1E3A8A;
+      --accent-color: #FBBF24;
+      --light-bg: #F3F4F6;
+      --dark-text: #1F2937;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      scroll-behavior: smooth;
+    }
+
+    /* Header with transparent background image */
+    header {
+      position: relative;
+      background: url('image.png') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align:top;
+      color: rgb(26, 24, 24);
+      overflow: hidden;
+      opacity: 100;
+    }
+    header {
+  
+  text-align: right; /* Aligns content to right */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns items to the right */
+  justify-content: center;
+  height: 300px; /* optional height */
+}
+
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      
+      z-index: 1;
+    }
+
+    .header-overlay {
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-overlay p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: var(--accent-color);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark-text);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .services, .projects, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 0.75rem;
+      background: var(--accent-color);
+      color: var(--dark-text);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #f59e0b;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Fade-in animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+ <header>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+    <img src="solid.png" alt="SolidBuild Logo" style="height: 60px;" />
+    <div>
+      <h1>SolidBuild Construction</h1>
+      <p>Your Vision, Our Foundation</p>
+    </div>
+  </div>
+</header>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <p>SolidBuild Construction delivers high-quality commercial and residential projects with a focus on innovation, safety, and long-term sustainability. From blueprints to final finish, we bring dreams to life with solid foundations.</p>
+  </section>
+
+  <section id="services" class="fade-in" style="background-color: #ffffff;">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-home fa-2x" style="color: #FBBF24;"></i>
+        <h3>Residential Construction</h3>
+        <p>Custom homes built with precision and care.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-building fa-2x" style="color: #FBBF24;"></i>
+        <h3>Commercial Projects</h3>
+        <p>Offices, malls, and industrial builds tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hammer fa-2x" style="color: #FBBF24;"></i>
+        <h3>Renovations</h3>
+        <p>Transform your spaces with our expert renovation services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <h2>Recent Projects</h2>
+    <div class="projects">
+      <div class="card"><img src="building-with-colorful-walls.jpg" alt="Project 1"><p>Modern Office Complex</p></div>
+      <div class="card"><img src="movie-night-by-pool-whole-family.jpg" alt="Project 2"><p>Luxury Villa</p></div>
+      <div class="card"><img src="indoor-hotel-view.jpg" alt="Project 3"><p>Shopping Mall Extension</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="fade-in" style="background-color: #F9FAFB;">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"SolidBuild turned our vision into reality. Professional and on time!"</p>
+        <strong>- John M., Homeowner</strong>
+      </div>
+      <div class="card">
+        <p>"Excellent craftsmanship and a great team to work with."</p>
+        <strong>- Laura K., Architect</strong>
+      </div>
+      <div class="card">
+        <p>"They handled everything from permits to final finish flawlessly."</p>
+        <strong>- Mark T., Business Owner</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

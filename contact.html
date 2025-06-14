@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - SolidBuild Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('contact.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background: #FBBF24;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1F2937;
+    }
+
+    nav a:hover {
+      color: #1E3A8A;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1E3A8A;
+      margin-bottom: 2rem;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background: #1E3A8A;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #3B82F6;
+    }
+
+    .contact-info {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3 {
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    .map {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1E3A8A;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <div class="contact-container">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Chennai, Tamil Nadu</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> contact@solidbuild.com</p>
+        <p><i class="fas fa-clock"></i> Mon - Sat: 9am - 6pm</p>
+      </div>
+    </div>
+
+    <div class="map">
+      <!-- Replace the src with your actual location link -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.219315977374!2d80.2408544!3d13.0826807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266086f907aa7%3A0x8f27f4c0e5c4f177!2sChennai!5e0!3m2!1sen!2sin!4v1678870149840"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
